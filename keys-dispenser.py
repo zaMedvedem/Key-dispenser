@@ -46,7 +46,6 @@ class keys_dispenser(Frame):
         else:
             batch_no = file2
 
-        print("You chose file " + "'" + batch_no + "'")
         file = open(batch_no, "r")
         key = file.readline().rstrip()
         date_time = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
